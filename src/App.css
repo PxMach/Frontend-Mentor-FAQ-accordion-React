@@ -41,11 +41,15 @@ header {
 .question {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 1rem;
 }
 .question h2 {
   font-size: 16px;
   cursor: pointer;
+}
+.question h2:hover {
+  color: rgb(204, 51, 204);
 }
 button {
   border: none;
@@ -55,12 +59,20 @@ button {
   cursor: pointer;
 }
 .question .minus {
-  /* display: none; */
   cursor: pointer;
 }
 
 .para-response {
-  /* display: none; */
   margin-top: 15px;
   color: rgb(150, 131, 150);
+}
+
+@media (min-width: 376px) {
+  body {
+    background-image: url("../assets/images/background-pattern-desktop.svg");
+    background-size: 100%;
+  }
+  .main {
+    width: 583px;
+  }
 }

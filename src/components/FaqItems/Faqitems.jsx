@@ -1,4 +1,6 @@
 import React from "react";
+import plus from "../../../assets/images/icon-plus.svg";
+import minus from "../../../assets/images/icon-minus.svg";
 
 export default function Faqitems(props) {
   const [show, setShow] = React.useState(false);
@@ -18,11 +20,11 @@ export default function Faqitems(props) {
           <h2>{props.titleOfQuestion}</h2>
           {!show ? (
             <button className="plus">
-              <img src={props.img1} alt="plus" onClick={handleShow} />
+              <img src={plus} alt="plus" onClick={handleShow} />
             </button>
           ) : (
             <button className="minus">
-              <img src={props.img2} alt="minus" onClick={handleHide} />
+              <img src={minus} alt="minus" onClick={handleHide} />
             </button>
           )}
         </div>

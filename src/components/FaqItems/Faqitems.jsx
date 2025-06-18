@@ -19,11 +19,11 @@ export default function Faqitems(props) {
         <div className="question">
           <h2>{props.titleOfQuestion}</h2>
           {!show ? (
-            <button className="plus">
+            <button className="plus" type="button">
               <img src={plus} alt="plus" onClick={handleShow} />
             </button>
           ) : (
-            <button className="minus">
+            <button className="minus" type="button">
               <img src={minus} alt="minus" onClick={handleHide} />
             </button>
           )}

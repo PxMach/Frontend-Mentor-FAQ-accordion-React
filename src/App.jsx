@@ -4,7 +4,7 @@ import Header from "./components/Header/Header";
 
 function App() {
   return (
-    <div className="main">
+    <div className="container">
       <Header />
       <Faqitems
         titleOfQuestion="What is Frontend Mentor, and how will it help me?"

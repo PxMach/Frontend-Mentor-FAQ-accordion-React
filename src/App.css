@@ -22,7 +22,7 @@ body {
   align-items: center;
   padding: 1rem;
 }
-.main {
+.container {
   background-color: #ffffff;
   color: var(--Purple_950);
   border-radius: 10px;
